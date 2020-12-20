@@ -6,7 +6,7 @@ local function onDirectoryButtonClick()
 for _, object in pairs (Selection:Get()) do
 
     local directory = object:GetFullName()
-    Print(directory)
+    print(directory)
 
 directoryButton.Click:Connect(onDirectoryButtonClick)
 
