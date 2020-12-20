@@ -1,0 +1,2 @@
+# InstanceDirectories 
+InstanceDirectories is a Roblox Studio Plugin meant to help developers' workflow. You simply select an instance and click the Plugin widget and thre working directory will be printed. 
