@@ -8,6 +8,9 @@ for _, object in pairs (Selection:Get()) do
         local directory = object:GetFullName()
         Print(directory)
 
-    elseif print('Error, Not an instance')
+    elseif print('Error, Not an instance') then
 
 directoryButton.Click:Connect(onDirectoryButtonClick)
+
+    end
+end
