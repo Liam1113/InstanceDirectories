@@ -4,11 +4,9 @@ local directoryButton = toolbar:CreateButton("Get Directory", "Get the working d
 
 local function onDirectoryButtonClick()
 for _, object in pairs (Selection:Get()) do
-    if object == Instance then
-        local directory = object:GetFullName()
-        Print(directory)
 
-    elseif print('Error, Not an instance') then
+    local directory = object:GetFullName()
+    Print(directory)
 
 directoryButton.Click:Connect(onDirectoryButtonClick)
 
