@@ -5,7 +5,7 @@ local directoryButton = toolbar:CreateButton("Get Directory", "Get the working d
 local function onDirectoryButtonClick()
 
 	local select = game.Selection:Get()[1]:GetFullName()
-	print(select)
+	print('InstanceDirectories - ' + select)
 
 	end
 
