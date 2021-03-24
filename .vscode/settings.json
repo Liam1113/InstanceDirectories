@@ -1,5 +1,0 @@
-{
-    "Lua.diagnostics.disable": [
-        "invalid-rbx-classname"
-    ]
-}
