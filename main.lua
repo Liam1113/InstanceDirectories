@@ -1,4 +1,5 @@
 	local Selection = game:GetService('Selection')
+	local selected = Selection:Get()[1]
 	local toolbar = plugin:CreateToolbar("Custom Script Tools")
 	local directoryButton = toolbar:CreateButton("Get Directory", "Get the working directory of an instance", "rbxassetid://4458901886")
 	local treeButton = toolbar:CreateButton("Get Tree", "Get the tree visualizer of an instance", "rbxassetid://4458901886")
@@ -26,7 +27,7 @@
 		return {[ancestor.Name] = convertChildrenToTable(ancestor)}
 	end
 
-	print(createSortedHierarchy(Selection:Get()))
+		print(createSortedHierarchy(selected))
 
 	directoryButton.Click:Connect(onDirectoryButtonClick)
 	treeButton.Click:Connect(createSortedHierarchy)
